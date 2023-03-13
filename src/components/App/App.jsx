@@ -18,7 +18,6 @@ export const App = () => {
   const [filter, setFilter] = useState('');
 
   const addContact = newContact => {
-    console.log(contacts);
     contacts.find(contact => contact.name === newContact.name)
       ? alert(`${newContact.name} is already in contacts`)
       : setContacts(state => [...state, newContact]);
